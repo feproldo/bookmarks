@@ -1,5 +1,3 @@
-use std::env::args;
-
 pub fn help() {
     let program_name: String = String::from("bookmarks");
     println!("Hello! This is what you can use:

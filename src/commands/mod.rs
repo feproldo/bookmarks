@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 mod help;
 mod delete;
 mod get;
-mod write;
+mod write; 
 
 #[derive(Serialize, Deserialize)]
 pub struct Bookmark {
@@ -28,7 +28,7 @@ pub fn match_args(args: Vec<String>, flags: Vec<String>) {
                 "get" => get::choose_method(args.clone()),
                 "delete" => delete::one(args.clone()),
                 "help" => help::help(),
-                "open" => {eprintln!("todo")}
+                "open" => {eprintln!("WIP!!!")}
                 _ => {
                     get::choose_method(args);
                 }
